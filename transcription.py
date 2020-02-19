@@ -76,8 +76,8 @@ def transcription(a):
     # Initialize credentials
 
     speech_to_text = SpeechToTextV1(
-        iam_apikey='iY6UdFrcCv7ld3elSJbvBsw_ZxbcAyiVlCi4o1Q4dM3T',
-        url='https://gateway-lon.watsonplatform.net/speech-to-text/api'
+        iam_apikey='Enter your api key',
+        url='Enter appropriate url as selected in IBM Dashboard'
     )
 
 
