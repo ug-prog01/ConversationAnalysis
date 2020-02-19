@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{ url_for('static',filename='style/bootstrap.min.css') }}" rel="stylesheet">
+    <script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/jquery-3.4.1.min.js') }}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  </head>
+  <body background="{{ url_for('static',filename='images/back.jpg') }}" style="background-repeat:no-repeat; width:100%; height: 100%; background-size:cover;">
+    <nav class="nav-extended"style="background:rgba(255, 228, 196, 0.65);height: 100px; border-radius:10px; width:95%; margin-left:2.5%;margin-top:1%;">
+       <!-- <div class="nav-wrapper" style="background-color: rgb(255, 228, 196, 0.5)"> -->
+          <a href="www.virtusa.com" class="brand-logo" style="padding-left: 30px; padding-top: 10px"><img src="{{ image }}" alt="ribbon" width="150" height="auto"></a>
+          <a href="/" class="brand-logo center" style="padding-top: 20px"><font size="6" color="#123C69">CONVERSATION ANALYSIS PLATFORM</font></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </nav>
+    <br><br><br><br>
+    <div class="card-deck">
+      <div class="card text-white bg-info mx-auto" style="max-width:30%; color: 66FCF1">
+        <div class="card-header text-white bg-info">
+          Transcription
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Speech to Text Transcription</h5>
+          <p class="card-text">Upload an audio file an get it's transcription automatically with Speaker Diarization!.</p>
+          <a href="{{ url_for('transcription') }}" class="btn btn-primary">Let's Transcript</a>
+        </div>
+      </div>
+      <div class="card text-white bg-info mx-auto " style="max-width:30%">
+        <div class="card-header text-white bg-info">
+          Analysis
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Speaker Analysis</h5>
+          <p class="card-text">Analyze the Speakers of the Conversation. Provides an insight into properties like - Time Taken, Confidence of the Model and Spectogram of the given audio.</p>
+          <a href="{{ url_for('analysis') }}" class="btn btn-primary">Let's Analyze</a>
+        </div>
+      </div>
+      <div class="card text-white bg-info mx-auto " style="max-width:30%">
+        <div class="card-header text-white bg-info">
+          Action Items
+        </div>
+        <div class="card-body bg-info">
+          <h5 class="card-title">Action Items</h5>
+          <p class="card-text">Extract the action items from the given Minutes of Meeting audio file.</p>
+          <a href="{{ url_for('action_items') }}" class="btn btn-primary">Let's get the action items</a>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br>
+
+
+    <div class="card-deck">
+        <div class="card text-white bg-info mx-auto" style="max-width:30%">
+          <div class="card-header text-white bg-info">
+            Topic Modelling
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Topic Analysis</h5>
+            <p class="card-text">Understand the total productivity of the conversation along with valuable insights.</p>
+            <a href="{{ url_for('topicmodelling') }}" class="btn btn-primary">Topic Modelling</a>
+          </div>
+        </div>
+        
+      </div>
+
+    <style>
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+
+      main {
+        flex: 1 0 auto;
+      }
+    </style>
+   <!-- <footer class="page-footer">
+      <div>
+        <a href="#">Virtusa</a>2019
+      </div>
+    </footer> -->
+
+  </body>
+</html>

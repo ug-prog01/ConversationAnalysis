@@ -1,0 +1,94 @@
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.upload-wrapper {
+   background: rgba(0, 0,0, 0.75);
+   margin: 30px 30px 30px 30%;
+   max-width: 650px;
+   padding: 5px 5px 5px 5px;
+   
+}
+
+header {
+   padding: 20px 0 30px;
+/* border-bottom: 2px solid #eeeeee; */
+width: 100%;
+;
+}
+
+.error {
+   display: block;
+   color: red;
+}
+h1 {
+   font-size: 22px;
+}
+a {
+color: blue;
+font-size: 13px;
+text-decoration: none;
+}
+input[type="file"] {
+background: #7886d8;
+padding: 15px 11px 18px 20px;
+border-radius: 4px;
+cursor: pointer;
+color: white;
+width: 350px;
+border: 2px solid #3F51B5;
+outline: 0;
+} 
+.btn {
+    display: block;
+    width: max-content;
+    height: 50px;
+    font-family: 'Droid Sans Mono', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(32, 105, 189);
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px white;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    margin-left: 12.5%;
+    font-weight: bold;
+    -webkit-animation: btnWiggle 5s infinite;
+    -moz-animation: btnWiggle 5s infinite;
+    -o-animation: btnWiggle 5s infinite;
+    animation: btnWiggle 5s infinite;
+    position: relative;
+   
+    
+
+  }
+  
+  
+  .subtext {
+    font-family: 'Droid Sans Mono', sans-serif;
+    font-size: 14px;
+    letter-spacing: .05em;
+    text-align: center;
+  }
+  
+  /* animation */
+  @-webkit-keyframes btnWiggle {
+      0% {-webkit-transform: rotate(0deg);}
+      2% {-webkit-transform: rotate(-1deg);}
+      3.5% {-webkit-transform: rotate(1deg);}
+      5% {-webkit-transform: rotate(0deg);}
+      100% {-webkit-transform: rotate(0deg);}
+  }
+  @-o-keyframes btnWiggle {
+      0% {-webkit-transform: rotate(0deg);}
+      2% {-webkit-transform: rotate(-1deg);}
+      3.5% {-webkit-transform: rotate(1deg);}
+      5% {-webkit-transform: rotate(0deg);}
+      100% {-webkit-transform: rotate(0deg);}
+  }
+  @keyframes btnWiggle {
+      0% {-webkit-transform: rotate(0deg);}
+      2% {-webkit-transform: rotate(-1deg);}
+      3.5% {-webkit-transform: rotate(1deg);}
+      5% {-webkit-transform: rotate(0deg);}
+      100% {-webkit-transform: rotate(0deg);}
+  }
