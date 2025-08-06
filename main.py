@@ -28,7 +28,6 @@ all the above visualizations along with transcript.
 import transcription as ts
 import analysis as sd
 import action_items as ac
-import get_topic as gp
 import word_cloud as wc
 import productivity as prod
 import line_plot as lp
